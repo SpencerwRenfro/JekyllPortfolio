@@ -8,9 +8,14 @@ module.exports = {
     './*.html',
   ],
   theme: {
-    theme: {
-      extend: {},
+    fontFamily: {
+        'sans': ['"Work Sans"']
     },
+    extend: {},
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+    require("tailwindcss"),
+    require("daisyui"),
+  ]
 }
